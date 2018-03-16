@@ -26,6 +26,9 @@
 			</Target>
 		</Build>
 		<Unit filename="main.cpp" />
+		<Unit filename="resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
