@@ -19,7 +19,7 @@ VS_VERSION_INFO    VERSIONINFO
   {
     BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
     {
-	  VALUE "CompanyName",      "Crapola\0"
+      VALUE "CompanyName",      "Crapola\0"
       VALUE "FileDescription",  "Clipboard cleaner\0"
       VALUE "FileVersion",      "\0"
       VALUE "LegalCopyright",   "Copyright ®2018 Crapola Software\0"

@@ -1,7 +1,7 @@
 #include <windows.h>
-int main(int,char**)
+int WINAPI WinMain(HINSTANCE,HINSTANCE,LPSTR,int)
 {
-	OpenClipboard(0);
+	OpenClipboard(NULL);
 	BOOL ok=EmptyClipboard();
 	//ok=FALSE;
 	if (ok==TRUE)
