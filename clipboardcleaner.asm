@@ -22,18 +22,18 @@ Main:
 	cmp eax,1
 	je Ok
 	; Error message
-    mov rcx,0
-    lea rdx,[fail]
-    lea r8,[title]
-    mov r9d,16
-    call MessageBoxA
+	mov rcx,0
+	lea rdx,[fail]
+	lea r8,[title]
+	mov r9d,16
+	call MessageBoxA
 	jmp Exit
 Ok:
-    mov rcx,0
-    lea rdx,[success]
-    lea r8,[title]
-    mov r9d,64
-    call MessageBoxA
+	mov rcx,0
+	lea rdx,[success]
+	lea r8,[title]
+	mov r9d,64
+	call MessageBoxA
 Exit:
 	call CloseClipboard
 	add rsp,28h
