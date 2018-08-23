@@ -1,4 +1,5 @@
-global Main
+; Windows 64-bits
+global WinMain
 ;
 extern CloseClipboard
 extern ExitProcess
@@ -12,7 +13,7 @@ fail:		db "Failed to empty clipboard.",0
 success:	db "Clipboard has been cleared!",0
 ;
 section .text
-Main:
+WinMain:
 	sub rsp,28h	; Shadow space
 	; Open and empty clipboard
 	xor ecx,ecx
@@ -37,5 +38,7 @@ Ok:
 Exit:
 	call CloseClipboard
 	add rsp,28h
+	; Return 0
+	xor ecx,ecx
 	call ExitProcess
 ;EOF
